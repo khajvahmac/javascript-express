@@ -1,15 +1,16 @@
 {
-  "name": "express-opentracing",
+  "name": "express-opentracing-node8",
   "version": "0.1.1",
   "description": "opentracing middleware for express-js",
   "main": "dist/index.js",
   "types": "index.d.ts",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://nexus.picsart.tools/content/repositories/npm_hosted/"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/babel src -d dist"
+    "build": "./node_modules/.bin/babel src -d dist",
+    "pub": "npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
