@@ -41,6 +41,7 @@ export default function middleware(options = {}) {
         span.setTag("error", true);
         span.setTag("sampling.priority", 1);
       }
+      span.finish();
     });
 
     next();
